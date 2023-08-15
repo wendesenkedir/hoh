@@ -1,0 +1,22 @@
+menuBtn=document.querySelector('.menu');
+cancelBtn=document.querySelector('.cancel')
+dropdown=document.querySelector('.dropdown')
+langBtn=document.querySelector('.lang')
+d2=document.querySelector('.d2')
+d3=document.querySelector('.d3')
+menuBtn.onclick=()=>{
+  menuBtn.style.display='none';
+  dropdown.style.display='grid';
+  cancelBtn.style.display='block';
+}
+cancelBtn.onclick=()=>{
+  cancelBtn.style.display='none';
+  dropdown.style.display='none';
+  menuBtn.style.display='block';
+  d2.style.display='none'
+d3.style.display='none'
+}
+langBtn.onclick=()=>{
+  d2.style.display='block'
+  d3.style.display='block'
+}
